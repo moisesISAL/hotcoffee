@@ -123,6 +123,7 @@ input:focus, textarea:focus, select:focus {
   transition: all 0.4s ease-in-out;
   border-radius: 4px;
   border: none;
+  cursor: pointer;
 }
 
 .btn:focus,
@@ -133,6 +134,9 @@ input:focus, textarea:focus, select:focus {
 .btn-primary {
   background-color: var(--primary);
   color: #fff;
+}
+.btn-primary:hover {
+  background-color: var(--info);
 }
 
 .form-control {
@@ -866,6 +870,9 @@ h1 img {
   font-size: 2vw;
   margin: 0;
 }
+.content .container .post .media-body .title a:hover {
+  color: var(--primary);
+}
 .content .container .post .media-body .intro {
   height: 25%;
   overflow-y: hidden;
@@ -891,6 +898,9 @@ h1 img {
   color: var(--secondary);
   text-decoration: none;
   font-size: 1.4vw;
+}
+.content .container .post .media-body .meta a:hover {
+  color: var(--primary);
 }
 @media (min-width: 768px) {
   .content .container:first-child {
@@ -946,6 +956,9 @@ h1 img {
     text-decoration: none;
     font-size: 1.4vw;
   }
+  .content .container:first-child .post .media .media-body .meta a:hover {
+    color: var(--primary);
+  }
   .content .container:nth-child(5) {
     width: 100%;
     margin-bottom: 3vh;
@@ -980,6 +993,9 @@ h1 img {
   .content .container:nth-child(5) .post .media .media-body .title a {
     color: #000;
   }
+  .content .container:nth-child(5) .post .media .media-body .title a:hover {
+    color: var(--primary);
+  }
   .content .container:nth-child(5) .post .media .media-body .intro {
     height: 30%;
     overflow-y: hidden;
@@ -1003,6 +1019,9 @@ h1 img {
     color: var(--secondary);
     text-decoration: none;
     font-size: 1.4vw;
+  }
+  .content .container:nth-child(5) .post .media .media-body .meta a:hover {
+    color: var(--primary);
   }
 }
 @media (max-width: 767px) {
@@ -1049,6 +1068,9 @@ h1 img {
 }
 .post-nav a p {
   margin: 0 0.5vw;
+}
+.post-nav a:hover {
+  background-color: var(--info);
 }
 
 .navbar {
@@ -1103,7 +1125,7 @@ h1 img {
   list-style: none;
 }
 .nav_items ul li {
-  margin: 0 1rem 0 0;
+  margin: 0 1.5vw 0 0;
 }
 .nav_items ul li a {
   text-decoration: none;
